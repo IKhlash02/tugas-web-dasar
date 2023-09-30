@@ -1,0 +1,547 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #272727;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  display: inline;
+  padding-inline: 151px;
+}
+
+nav {
+  padding-inline: 150px;
+  opacity: 70%;
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #4d4d4d;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav h1 {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 145px;
+  margin-right: 145px;
+}
+
+.home img {
+  height: 400px;
+}
+
+.text-home {
+  background: linear-gradient(134deg, #3bf686 40.75%, #4ca9ff 90.52%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: start;
+  /* Heading/H2 */
+  font-family: Sora;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.what-i-do {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 60px 151px;
+}
+
+.text-what-i-do {
+  text-align: start;
+}
+
+.text-what-i-do h4 {
+  color: #fff;
+
+  /* Heading/H4 */
+  font-family: Sora;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.text-what-i-do p {
+  color: #edcece;
+
+  /* Body/Normal */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.252px;
+}
+
+.what-i-do .card-1 {
+  width: 262px;
+  padding: 19px 15px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #323443;
+}
+
+.what-i-do .card-1 h6 {
+  color: var(--Text-1, #fafaf9);
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.what-i-do .card-1 p {
+  color: var(--Text-2, rgba(239, 237, 232, 0.65));
+  text-align: center;
+  margin: 0;
+  /* Small/Normal */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+
+  letter-spacing: 1px;
+}
+.featured-project {
+  gap: 38px;
+  margin-inline: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-featured-project {
+  color: #fff;
+
+  /* Heading/H3 */
+  font-family: Sora;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: 1px;
+}
+
+.card-project {
+  gap: 26px;
+  display: flex;
+}
+
+.thumbnail-project {
+  border: 2px solid #323443;
+  width: 556px;
+  height: 282px;
+  padding: 0px;
+}
+
+.thumbnail-project img {
+  overflow: hidden;
+  width: 556px;
+  height: 282px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detail-project {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.detail-project h6 {
+  margin: 0;
+  color: #dedede;
+
+  /* Body/Bold */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: 1px;
+}
+.detail-project h3 {
+  margin: 0;
+  color: #fff;
+
+  /* Heading/H3 */
+  font-family: Sora;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: 1px;
+}
+.detail-project p {
+  margin: 0;
+  color: #d4d4d4;
+
+  /* Body/Normal */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: 0.252px;
+}
+
+.skill {
+  gap: 38px;
+  margin: 60px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill .technology {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+.skill .technology svg {
+  padding: 10px;
+  border-radius: 10px;
+  background: #fbfbfb;
+  width: 12%;
+  height: auto;
+}
+
+.skill h3 {
+  margin: 0px;
+  color: #fff;
+
+  /* Heading/H3 */
+  font-family: Sora;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: 1px;
+}
+
+.project {
+  gap: 38px;
+  margin: 60px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project h3 {
+  margin: 0px;
+  color: #fff;
+
+  /* Heading/H3 */
+  font-family: Sora;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: 1px;
+}
+
+.project .card {
+  margin-inline: 20px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project .card-item {
+  width: 450px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  background: #323443;
+}
+
+.card-item img {
+  border-radius: 10px 10px 0px 0px;
+
+  width: 450px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-item p,
+h4 {
+  margin: 5px;
+}
+.card-item h4 {
+  color: #fff;
+
+  /* Heading/H4 */
+  font-family: Sora;
+  font-size: 24px;
+  font-style: normal;
+
+  letter-spacing: 1px;
+}
+.card-item p {
+  color: #fff;
+
+  /* Body/Normal */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.252px;
+}
+
+.tech-use {
+  display: flex;
+  margin: 0px;
+}
+
+.tech-use p {
+  font-weight: 600;
+  color: #edcece;
+  font-size: 10px;
+  font-style: normal;
+}
+
+footer {
+  padding: 10px 0px;
+  margin: 38px 15%;
+  gap: 10px;
+  border-top: 2px solid #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: #f4f4f4;
+  font-family: IBM Plex Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.reach-me {
+  gap: 16px;
+}
+
+footer ul {
+  display: flex;
+  padding-inline: 4rem;
+  gap: 2rem;
+}
+footer li {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-family: IBM Plex Sans;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 22px;
+}
+
+aside .card {
+  width: 300px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  background: #323443;
+  padding: 20px;
+}
+
+aside h4 {
+  color: #fbfbfb;
+  margin: 0;
+  /* Mobile/Heading/H4 */
+  font-family: Sora;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 30px; /* 150% */
+  letter-spacing: 1px;
+}
+
+aside p {
+  color: #d6d6d6;
+  margin: 0;
+  text-align: center;
+  /* Mobile/Body/Normal */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.084px;
+}
+
+.sosial-media {
+  display: flex;
+  gap: 7px;
+}
+
+.profile img {
+  width: 96px;
+  height: 96px;
+}
+
+@media screen and (max-width: 992px) {
+  .what-i-do {
+    flex-wrap: wrap;
+  }
+
+  .home {
+    margin-inline: 100px;
+  }
+  .what-i-do {
+    margin: 60px 100px;
+  }
+
+  .card-project {
+    flex-wrap: wrap;
+  }
+
+  .skill .technology svg {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    padding-inline: 20px;
+  }
+  nav h1 {
+    padding: 0px;
+  }
+  nav {
+    position: static;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav ul {
+    padding: 0px;
+  }
+
+  .home {
+    margin: 0px 25px;
+  }
+
+  .text-home {
+    text-align: left;
+
+    font-size: 22px;
+  }
+
+  .what-i-do {
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 24px 24px;
+  }
+
+  .text-what-i-do {
+    text-align: center;
+  }
+
+  .card-project {
+    gap: 16px;
+    display: flex;
+  }
+
+  .thumbnail-project {
+    width: 70%;
+
+    padding: 0px;
+  }
+
+  .thumbnail-project img {
+    overflow: hidden;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .featured-project {
+    margin: 60px 24px;
+  }
+
+  .text-featured-project h3 {
+    font-size: 38px;
+    margin: 0px;
+  }
+
+  .detail-project {
+    gap: 11px;
+  }
+
+  .detail-project h3 {
+    font-size: 22px;
+  }
+
+  .project {
+    margin-inline: 24px;
+  }
+  .project .card-item {
+    width: 322px;
+    height: 225px;
+  }
+
+  .project .card-item img {
+    width: 322px;
+  }
+
+  .skill {
+    text-align: center;
+    margin: 30px 24px;
+  }
+}
